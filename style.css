@@ -1,0 +1,17 @@
+
+
+body{
+    background-image: url("Main Background.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+
+}
+
+/* Brand image */
+.brand-img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
