@@ -1,0 +1,11 @@
+body{
+    background-image: url("Main Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Brand image */
+.brand-img {
+  height: 50px;
+}
