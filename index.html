@@ -4,71 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style .css">
-        <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </head>
 <body>
-    <header class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container-fluid">
-              <a class="navbar-brand" href="javascript:void(0)">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="index.html">Fare Matrix</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="index.html">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="index.html">Help</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <button class="btn btn-Primary" type="button">Create Account
-                  </button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="container-fluid">
-      <div class="container bg-warning rounded mt-5 p-3">
-        <h1>Welcome to eSakayMo Fare Guide!</h1>
+    
+    <header class="navbar navbar-expand-lg navbar-dark p-3 bg-dark fixed-top">
 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Logo.png" alt="Logo" style="width: 150px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Fare Matrix</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Help</a></li>
+                </ul>
+
+                <button class="btn btn-info" type="button">Create Account</button>
+
+            </div>
+                
+        </div>
+
+    </header>
+
+    <br><br>
    
-     <button class="btn-danger mt-3" type="button"onclick="">> Click here for instructions</button>
-     <br>
-     <div id="farematrix">
-      <h1>eSakayMo Fare Matrix</h1>  
-      <div class="container-fluid opacity-value-0.5">
-      <img src="">
-      <label class="form-label" for="budget"><h4>Pick-up Location</h4></label>
-      <input type="text" placeholder="North Ave" class="form-control" id="budget">
-       <label class="form-label" for="budget"><h4>Drop Off Location</h4></label>
-      <input type="text" placeholder="North Ave" class="form-control" id="budget">
-          
-     </div>
-     </div>
-    </div>
+    <main class="container-fluid"><br><br>
+
+        <div class="container bg-secondary rounded mt-3 p-5 text-center">
+            
+            <h1 class="text-center text-white"> Welcome to <span class="text-info"><b>eSakayMo</b></span> Fare Guide!</h1><br>
+            <img src="logo2.png" style="width: 200px;"><br><br>
+
+            <button class="btn btn-info" type="button" onclick="fareMatrix()"> Click here for Instructions</button>
+
+        </div>
+    
+        <div id="fare-matrix"></div>
+
     </main>
 
+    <br><br><br><br>
 
 
-   <footer class="footer navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom py-3 text-white">
-          <small>Canuday, Perez, Manacap, Aguirre | 9-Emerald &copy; 2026</small>
+
+   <footer class="footer bg-dark fixed-bottom py-3 text-white text-center">
+          <p>Canuday, Perez, Manacap, Aguirre | 9-Emerald &copy; 2026</p>
    </footer>
 
 
-  <script src=main.js></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
